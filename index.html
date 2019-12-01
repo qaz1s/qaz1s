@@ -1,69 +1,624 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>julioverne's Repo</title>
-	<noscript>
-		<link rel="stylesheet" href="ios7.min.css?_=d" type="text/css" />
-	</noscript>
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Twickd is the best place to experience next generation software. Join our amazing community and start sharing and finding amazing iOS Tweaks and Themes for your Perfect Jailbreak setup!">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="https://twickd.com/images/favicon.png/96" sizes="96x96">
+    
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="fHwwUwTXmYBbyN4V4YJywHYj8aLFpVnsnz4CByLm">
+    
+    <!-- Apple -->
+    <meta name="apple-mobile-web-app-title" content="Twickd">
+    <link rel="apple-touch-icon" href="https://twickd.com/images/favicon.png/120">
+    <link rel="apple-touch-icon" size="120x120" href="https://twickd.com/images/favicon.png/120">
+    <link rel="apple-touch-icon" size="180x180" href="https://twickd.com/images/favicon.png/180">
+
+    <!-- Meta -->
+            <meta property="og:url" content="https://twickd.com">
+        <meta property="og:site_name" content="Twickd">
+        <meta property="og:title" content="Twickd — Unleash the power">
+        <meta property="og:image" content="https://avatars.io/twitter/TwickdRepo">
+        <meta property="og:description" content="Twickd is the best place to experience next generation software. Join our amazing community and start sharing and finding amazing iOS Tweaks and Themes for your Perfect Jailbreak setup!">
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@TwickdRepo" />
+    
+    <title>Repository — Twickd</title>
+
+    <!-- Scripts -->
+    <script src="https://repo.twickd.com/js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://repo.twickd.com/css/twickd.css" rel="stylesheet">
 </head>
-<script src="jquery-3.2.1.min.js"></script>
-<script src="description.js?_=d"></script>
-<body onload="loadPackages();">
-	<main id="content">
-		<h2 role="header">julioverne's Repo</h2>
-		<ul>
-			<li class="has-icon">
-				<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://julioverne.github.io/" role="button">
-					<img style = "border-radius: 20%;" href="cydia7.png" alt="" srcset="cydia7.png 2x, cydia7.png 3x" class="icon"/>
-					<label>Open Cydia</label>
-				</a>
-			</li>
-		</ul>
-		<p style="text-align: center; font-size: 85%;" role="footer" id="neo">Repo: https://julioverne.github.io/</p>
-		<noscript>
-			<h2></h2><ul style="background:#ff0000"><center><li><p>Error JavaScript Disabled.</p></li></center></ul>
-		</noscript>
-		<span id="updates_" hidden><h2 role="header">Last Updates</h2><ul id="updates"></ul></span>
-		<span id="browser_" hidden><h2 role="header">Browse Packages</h2><ul id="browser"></ul></span>
-		<h2 role="header">Social</h2>
-		<ul>
-			<li class="has-icon">
-				<a href="https://github.com/julioverne" target="_blank" role="button">
-					<img style = "border-radius: 20%;" href="github.png" alt="" srcset="github.png 2x, github.png 3x" class="icon"/>
-					<label>GitHub</label>
-				</a>
-			</li>
-			<li class="has-icon">
-				<a href="https://www.reddit.com/user/julioverne" target="_blank" role="button">
-					<img style = "border-radius: 20%;" href="reddit.png" alt="" srcset="reddit.png 2x, reddit.png 3x" class="icon"/>
-					<label>Reddit</label>
-				</a>
-			</li>
-			<li class="has-icon">
-				<a href="https://twitter.com/iJulioVerne" target="_blank" role="button">
-					<img style = "border-radius: 20%;" href="twitter.png" alt="" srcset="twitter.png 2x, twitter.png 3x" class="icon"/>
-					<label>Follow julioverne</label>
-				</a>
-			</li>
-			<li class="has-icon">
-				<a href="https://www.patreon.com/julioverne" target="_blank" role="button">
-					<img style = "border-radius: 20%;" href="patreon.png" alt="" srcset="patreon.png 2x, patreon.png 3x" class="icon"/>
-					<label>Patreon (Support)</label>
-				</a>
-			</li>
-		</ul>
-		<h2 role="header">Theme</h2>
-		<ul>
-			<li>
-				<a onclick="toogleTheme();" role="button">
-					<p>Change Theme</p>
-				</a>
-			</li>
-		</ul>
-	</main>
-	<p style="text-align: center; font-size: 85%; margin-top: 10px;" role="footer" id="neo">julioverne © 2019</p>
-</body>
+<body class="dark">
+    <div id="app" >
+                    <nav class="transparency-full">
+    
+    <div class="container h-100">
+        <div class="row align-items-center h-100">
+            <div class="col-4 col-sm-3">
+                                                                <a href="https://twickd.com" class="nav-brand">
+                                        <img src="https://repo.twickd.com/storage/static_images/logo_white.svg" class="svg-42">
+                                    </a>
+            </div>
+    
+            <div class="navigation col-2 col-sm-6 text-center">
+                                                    <a href="https://repo.twickd.com" class="btn btn-link btn-white ">Repository</a>
+                    <a href="https://twickd.com/news" class="btn btn-link btn-white ">News</a>
+                    
+                                            </div>
+    
+            <div class="navigation-right col-6 col-sm-3 text-right">
+                <div class="btn-group">
+                    <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre
+                        class="dropdown-toggle color-white  d-flex align-items-center">
+                        <ion-icon name="ios-contact" size="large"></ion-icon>
+                        <div class="d-flex flex-column justify-content-center text-left  mx-2" style="line-height: 1;">
+                                                            <span class="p-0 m-0">Sign In OR</span>
+                                <h6 class="font-weight-bold p-0 m-0 text-uppercase">Sign Up</h6>
+                                                    </div>
+                        <ion-icon name="ios-arrow-down"></ion-icon>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right background-color-weak" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item btn-link btn-primary" href="https://twickd.com/login">Login</a>
+                                                            <a class="dropdown-item btn-link btn-primary" href="https://twickd.com/register">Register</a>
+                                                                        </div>
+                </div>
+    
+                    
+            </div>
+        </div>
+    </div>
+
+</nav>            <header>
+                                <h1 class="color-white">Repository</h1>
+                <span class="color-white">The best place to do cool things</span>
+                            </header>
+        
+
+        <main class=" py-4  container-fluid">
+                <div class="container">
+        <div class="mb-40" id="featured">
+            <div class="pt-40 mb-3">
+                <h2 class="color-strong w-100">Featured</h2>
+            </div>
+            <div class="cards card-carousel" id="featured-cards">
+                                    <a href="https://repo.twickd.com/package/com.twickd.dave-van-wijk.nottoday13">
+                    <div class="card card-small background-color-dominant-cyan mr-3">
+                        <img src="https://twickd.com/cdn/package/com.twickd.dave-van-wijk.nottoday13" alt="" class="card-image">
+                        <div class="card-body">
+                            <div class="card-infos">
+                                <img class="img-fluid svg-42" src="https://twickd.com/cdn/screenshots/bf8824f1b338f94ff44ae7f65124d552/default">
+                                <p class="color-white font-weight-bold mt-2">NotToday13</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                                    <a href="https://repo.twickd.com/package/com.twickd.tacitus">
+                    <div class="card card-small background-color-dominant-red mr-3">
+                        <img src="https://twickd.com/cdn/screenshots/92e28d6f6234d940a1238c03a5648ff1/296" alt="" class="card-image">
+                        <div class="card-body">
+                            <div class="card-infos">
+                                <img class="img-fluid svg-42" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAG1BMVEX/OzD/Vkz/gnv/XVT/hX7/////l5H/iIH/mpU5qPCfAAAAAWJLR0QF+G/pxwAAAAd0SU1FB+MMARYeK0EeULUAAABJSURBVGje7cyhEcAgEABBMpMZ+kgFNBNPKZSOIPIN5kXY9XelAABAmusJtI3B/Qa6gUH24FNXOfZLAwMDAwMDAwODPw8AAA41Af0ArfJiCqTlAAAAAElFTkSuQmCC">
+                                <p class="color-white font-weight-bold mt-2">Tacitus</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                                    <a href="https://repo.twickd.com/package/com.daveapps.purefocus">
+                    <div class="card card-small background-color-dominant-cyan mr-3">
+                        <img src="https://twickd.com/cdn/screenshots/b7c969c7b00188be23afedd953caf945/296" alt="" class="card-image">
+                        <div class="card-body">
+                            <div class="card-infos">
+                                <img class="img-fluid svg-42" src="https://twickd.com/cdn/screenshots/6aa2e4d8fed51eda7ba787c634fa5646/default">
+                                <p class="color-white font-weight-bold mt-2">PureFocus</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                                    <a href="https://repo.twickd.com/package/com.thenatis.Libentis">
+                    <div class="card card-small background-color-dominant-purple mr-3">
+                        <img src="https://twickd.com/cdn/screenshots/7a109f4ce0e071b56eaa8da426a361a9/296" alt="" class="card-image">
+                        <div class="card-body">
+                            <div class="card-infos">
+                                <img class="img-fluid svg-42" src="https://twickd.com/cdn/screenshots/d64693c5d0b861500ac967f404888bbe/default">
+                                <p class="color-white font-weight-bold mt-2">Libentis</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                            </div>
+        </div>
+
+        <div id="categories">
+            <div class="pt-40">
+                <h2 class="color-strong">Trendings</h2>
+                <p class="color-subtile">Get a quick summary of the most popular packages available on Twickd for each major categories</p>
+            </div>
+                            <div class="row my-60">
+                    <div class="col-12 mb-2">
+                        <h3 class="color-strong mb-3">Tweaks</h3>
+                    </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.twickd.tacitus" class="card-image">
+                                <img src="https://twickd.com/cdn/screenshots/92e28d6f6234d940a1238c03a5648ff1/375" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">Tacitus</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/Hugo" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/BLVCKLNGS/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>Hugo</p>
+                                                                                        <ion-icon name="checkmark-circle" size="small" class="color-primary align-top" title="Certified Developer" style="width: 12px"></ion-icon>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 7244</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 11.3.1 - 12.4
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.twickd.tacitus" class="btn btn-dominant-red btn-price ml-auto">
+                                                                                    $1.49
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.twickd.spdxs" class="card-image">
+                                <img src="https://twickd.com/cdn/package/com.twickd.spdxs" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">ShyPageDots XS</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/Hugo" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/BLVCKLNGS/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>Hugo</p>
+                                                                                        <ion-icon name="checkmark-circle" size="small" class="color-primary align-top" title="Certified Developer" style="width: 12px"></ion-icon>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 995</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 10.0 - 12.4
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.twickd.spdxs" class="btn btn-dominant-cyan btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.twickd.dave-van-wijk.nottoday13" class="card-image">
+                                <img src="https://twickd.com/cdn/package/com.twickd.dave-van-wijk.nottoday13" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">NotToday13</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/Dave%20Van%20Wijk" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/DaveWijk/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>Dave Van Wijk</p>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 456</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 13.0 - 13.2
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.twickd.dave-van-wijk.nottoday13" class="btn btn-dominant-cyan btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.daveapps.purefocus" class="card-image">
+                                <img src="https://twickd.com/cdn/screenshots/b7c969c7b00188be23afedd953caf945/375" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">PureFocus</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/Dave%20Van%20Wijk" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/DaveWijk/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>Dave Van Wijk</p>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 11.3.1 - 12.4
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.daveapps.purefocus" class="btn btn-dominant-cyan btn-price ml-auto">
+                                                                                    $1.50
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.daveapps.tweaklxrd" class="card-image">
+                                <img src="https://twickd.com/cdn/package/com.daveapps.tweaklxrd" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">tweaklxrd</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/Dave%20Van%20Wijk" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/DaveWijk/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>Dave Van Wijk</p>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 136</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 9.0 - 12.4
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.daveapps.tweaklxrd" class="btn btn-dominant-black btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.peterdev.whatabouthis" class="card-image">
+                                <img src="https://twickd.com/cdn/package/com.peterdev.whatabouthis" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">WhatAboutThis</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/Soongyu%20Kwon" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/iospeterdev/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>Soongyu Kwon</p>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 66</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 5.1 - 12.2
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.peterdev.whatabouthis" class="btn btn-dominant-pink btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+                            <div class="row my-60">
+                    <div class="col-12 mb-2">
+                        <h3 class="color-strong mb-3">Themes</h3>
+                    </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.twickd.moonlight-sa" class="card-image">
+                                <img src="https://twickd.com/cdn/package/com.twickd.moonlight-sa" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">MoonLight (System Apps)</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/Hugo" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/BLVCKLNGS/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>Hugo</p>
+                                                                                        <ion-icon name="checkmark-circle" size="small" class="color-primary align-top" title="Certified Developer" style="width: 12px"></ion-icon>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 536</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 5.1 - 12.4
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.twickd.moonlight-sa" class="btn btn-dominant-purple btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.willbraff.historyofios" class="card-image">
+                                <img src="https://twickd.com/cdn/screenshots/a7c7a82eb862f012d30a2c0e4429d130/375" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">History Of iOS</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/William%20Braffman" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/Thenatis1/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>William Braffman</p>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 515</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 5.1 - 12.4
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.willbraff.historyofios" class="btn btn-dominant-cyan btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.twickd.human.shitos" class="card-image">
+                                <img src="https://twickd.com/cdn/package/com.twickd.human.shitos" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">ShitOS</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/Human" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/TwickdRepo/small" width="24" height="24" class="rounded-circle mr-1">
+                                                                                        <p>Human</p>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 324</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 7.0 - 13.2
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.twickd.human.shitos" class="btn btn-dominant-cyan btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.twickd.firethefried.checkra1n-respring-logo" class="card-image">
+                                <img src="https://twickd.com/cdn/screenshots/37a93616ee9a61f9f7a4d4667a27e717/375" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">Checkra1n Respring Logo</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/FireTheFried" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/TwickdRepo/small" width="24" height="24" class="rounded-circle mr-1">
+                                                                                        <p>FireTheFried</p>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 322</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 12.2 - 13.3
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.twickd.firethefried.checkra1n-respring-logo" class="btn btn-dominant-cyan btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.twickd.ethan-whited.mesmerize" class="card-image">
+                                <img src="https://twickd.com/cdn/screenshots/8be0869e39e28e4e721335cf6ceff39f/375" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">Mesmerize</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/Ethan%20Whited" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/Ethanwhited/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>Ethan Whited</p>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 292</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 10.0 - 13.3
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.twickd.ethan-whited.mesmerize" class="btn btn-dominant-cyan btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.twickd.william-braffman.libentis-lite" class="card-image">
+                                <img src="https://twickd.com/cdn/screenshots/da08057c90e0c4fb245f6a8512e26bee/375" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">Libentis Lite</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/William%20Braffman" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/Thenatis1/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>William Braffman</p>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 167</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 5.1 - 13.2
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.twickd.william-braffman.libentis-lite" class="btn btn-dominant-cyan btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+                            <div class="row my-60">
+                    <div class="col-12 mb-2">
+                        <h3 class="color-strong mb-3">Widgets</h3>
+                    </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.twickd.jazz-html" class="card-image">
+                                <img src="https://twickd.com/cdn/package/com.twickd.jazz-html" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">Jazz | XenHTML</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/Hugo" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/BLVCKLNGS/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>Hugo</p>
+                                                                                        <ion-icon name="checkmark-circle" size="small" class="color-primary align-top" title="Certified Developer" style="width: 12px"></ion-icon>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 348</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 9.0 - 13.3
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.twickd.jazz-html" class="btn btn-dominant-black btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.leebrandondogwav3.ifoxl" class="card-image">
+                                <img src="https://twickd.com/cdn/screenshots/3da264b5f29ce4bf371c6d30babcca21/375" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">iFoxl</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/DogWav3" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/Wav3The/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>DogWav3</p>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 307</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 11.3.1 - 12.4
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.leebrandondogwav3.ifoxl" class="btn btn-dominant-yellow btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="card card-big col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                            <a href="https://repo.twickd.com/package/com.twickd.rollie-html" class="card-image">
+                                <img src="https://twickd.com/cdn/package/com.twickd.rollie-html" alt="" class="w-100 card-image">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="color-strong">Roolie | XenHTML</h4>
+                                <div class="d-flex w-100 align-items-center">
+                                    <div class="card-infos">
+                                        <a href="https://twickd.com/profile/Hugo" class="dev-infos btn-strong px-0 btn btn-link d-flex">
+                                                                                        <img src="https://avatars.io/twitter/BLVCKLNGS/small" width="24" height="24" class="rounded-circle mr-2">
+                                                                                        <p>Hugo</p>
+                                                                                        <ion-icon name="checkmark-circle" size="small" class="color-primary align-top" title="Certified Developer" style="width: 12px"></ion-icon>
+                                                                                    </a>
+                                        <div class="d-flex">
+                                                                                        <span class="color-subtile icon align-items-center mr-3" title="Downloads"><ion-icon name="ios-cloud-download" class="mr-1 ico-4"></ion-icon> 277</span>
+                                                
+                                            <span class="color-subtile icon align-items-center" title="Compatibility">
+                                                <ion-icon name="ios-phone-portrait" class="mr-1 ico-4"></ion-icon>iOS 9.0 - 13.3
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="https://repo.twickd.com/package/com.twickd.rollie-html" class="btn btn-dominant-pink btn-price ml-auto">
+                                                                                    FREE
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+        </main>
+
+        
+                    <footer class=" background-color-smooth ">
+    <div class="container">
+        <div class="row reveal border-bottom border-color-smooth">
+            <div class="col-sm-12 col-md-12 col-lg-3 mb-3 reveal-1">
+                <div class="d-flex align-items-center pb-3 justify-content-center justify-content-md-start">
+                    <img src="https://repo.twickd.com/storage/static_images/logo_primary.svg" class="svg-42">
+                    <h3 class="color-strong pl-3">Twickd</h3>
+                </div>
+                <span class="d-none d-md-block">Hey listen, we know you're bored if you read this. So might as well come and chat with us on social medias!</span>
+
+                <div class="socials pt-3 d-none d-md-flex">
+                    <a href="https://twitter.com/TwickdRepo" class="btn-link btn-strong"><ion-icon size="large" name="logo-twitter"></ion-icon></a>
+                    <a href="https://github.com/Twickd" class="btn-link btn-strong pl-3"><ion-icon size="large" name="logo-github"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4 col-md-4 col-lg-3 pb-3 pb-sm-0 reveal reveal-2">
+                <h3 class="color-strong pb-0 pb-sm-3">Learn</h3>
+                <div class="row px-3">
+                    <div class="reveal-1 px-0 col-6 col-sm-6 col-md-12 col-lg-12"><a href="https://twickd.com" class="px-0 btn btn-link btn-primary">Home</a></div>
+                    <div class="reveal-3 px-0 col-6 col-sm-6 col-md-12 col-lg-12"><a href="https://twickd.com/news" class="px-0 btn btn-link btn-primary">News</a></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-3 pb-3 pb-sm-0 reveal reveal-2">
+                <h3 class="color-strong pb-0 pb-sm-3">Explore</h3>
+                <div class="row px-3">
+                    <div class="reveal-2 px-0 col-6 col-sm-6 col-md-12 col-lg-12"><a href="https://repo.twickd.com" class="px-0 btn btn-link btn-primary">Repository</a></div>
+                    <div class="reveal-2 px-0 col-6 col-sm-6 col-md-12 col-lg-12"><a href="https://account.twickd.com" class="px-0 btn btn-link btn-primary">Account</a></div>
+                    <div class="reveal-2 px-0 col-6 col-sm-6 col-md-12 col-lg-12"><a href="https://developer.twickd.com/panel" class="px-0 btn btn-link btn-primary">Developer</a></div>
+                </div>
+            </div>
+
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 reveal reveal-3">
+                <h3 class="color-strong pb-0 pb-sm-3">Latest News</h3>
+                                                    <div class="row px-3 mb-3 flex-column">
+                        <h5 class="color-subtile">Become a Developer on Twickd in less than 5 minutes!</h5>
+                        <a href="https://twickd.com/news/become-a-developer-on-twickd-in-less-than-5-minutes">Read the article</a>
+                    </div>
+                                    <div class="row px-3 mb-3 flex-column">
+                        <h5 class="color-subtile">Changelog 0.6</h5>
+                        <a href="https://twickd.com/news/changelog-06">Read the article</a>
+                    </div>
+                            </div>
+                    </div>
+        <div class="row">
+            <div class="col-12 pt-3 d-flex flex-column align-items-center flex-md-row justify-content-md-between px-lg-0">
+                <p class="color-subtile">
+                    Copyright &copy; 2019 — Twickd
+                </p>
+                <div class="text-right">
+                    <a href="https://twickd.com/terms-of-services" class="color-subtile">Terms of Service</a> •
+                    <a href="https://twickd.com/privacy-policy" class="color-subtile">Privacy Policy</a> •
+                    <a href="https://twickd.com/developer-policy" class="color-subtile">Developer Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>            </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    </body>
 </html>
